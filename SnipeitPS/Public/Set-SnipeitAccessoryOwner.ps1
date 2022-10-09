@@ -7,7 +7,7 @@
     .PARAMETER id
     Unique ID  For accessory or array of IDs to checkout
 
-    .PARAMETER assigned_id
+    .PARAMETER assigned_to
     Id of target user
 
     .PARAMETER note
@@ -20,7 +20,7 @@
     Deprecated parameter, please use Connect-SnipeitPS instead. User's API Key for Snipeit.
 
     .EXAMPLE
-    Set-SnipeitAccessoryOwner -id 1 -assigned_id 1  -note "testing check out to user"
+    Set-SnipeitAccessoryOwner -id 1 -assigned_to 1  -note "testing check out to user"
 #>
 function Set-SnipeitAccessoryOwner() {
     [CmdletBinding(
